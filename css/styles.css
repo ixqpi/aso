@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right, #f7b7a3, #ea609a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #fff; /* خلفية بيضاء لصندوق تسجيل الدخول */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف للصندوق */
+    text-align: center;
+    width: 300px;
+}
+
+.logo {
+    width: 100px; /* حجم شعار انستجرام */
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3897f0; /* لون زر تسجيل الدخول */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #287bb5; /* تغيير اللون عند التحويم */
+}
+/* تنسيق الأيقونات لتظهر في أسفل الشاشة */
+.icons {
+    display: flex;
+    justify-content: space-around; /* توزيع الأيقونات بشكل متساوي */
+    align-items: center;
+    position: fixed; /* لجعل الأيقونات ثابتة في أسفل الصفحة */
+    bottom: 0; /* تحديد المسافة من أسفل الشاشة */
+    width: 100%; /* تمديد الأيقونات على العرض الكامل */
+    background-color: white; /* لون الخلفية تحت الأيقونات */
+    padding: 10px 0; /* إضافة مسافة حول الأيقونات */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* ظل خفيف للأيقونات */
+}
+
+.icons img {
+    width: 30px; /* تحديد حجم الأيقونات */
+    height: 30px;
+    cursor: pointer;
+}
+
+/* إضافة تحسينات عامة لتنسيق النصوص والعناصر */
+body {
+    text-align: center;
+    margin: 0; /* لإزالة المسافات الافتراضية */
+    padding-bottom: 60px; /* لإضافة مساحة تحت الصفحة لتجنب تغطية الأيقونات المحتوى */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+/* لتأكد أن الصفحة متجاوبة مع الشاشات المختلفة */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-bottom: 60px; /* للتأكد أن الأيقونات لا تغطي المحتوى */
+    box-sizing: border-box;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icons img {
+    width: 24px; /* حجم أصغر للأيقونات على الشاشات الصغيرة */
+    height: 24px;
+    cursor: pointer;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+/* تحسين التصميم للشاشات الصغيرة */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .icons img {
+        width: 20px;
+        height: 20px;
+    }
+}
+/* تنسيق الشريط العلوي */
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #dbdbdb;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 24px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #dbdbdb;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 24px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-icons .icon {
+    width: 25px;
+    height: 25px;
+}
+
+/* تنسيق المحتوى الرئيسي */
+.main-content {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+/* تنسيق الأقسام المختلفة */
+.post, .search, .add-post, .reels, .profile {
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    width: 100%;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+}
+
+/* تنسيق الشريط السفلي */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 10px 0;
+    border-top: 1px solid #dbdbdb;
+    z-index: 1000;
+}
+
+.bottom-nav img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
